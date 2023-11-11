@@ -1,0 +1,650 @@
+@import url("./fonts.css");
+@import url("./responsive.css");
+@import url("./fonts.css");
+@import url("./");
+@import url("./");
+
+
+/* universal codes start */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+
+/* universal codes end */
+
+
+/* html style */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* html style */
+
+/* container css */
+.container{
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+/* container css  */
+
+
+/* root path ccs */
+
+:root {
+  --padding: 25px;
+  --fontsPoppins: 'Poppins';
+  --interFonts:'Inter';
+}
+
+/* root path ccs */
+
+
+
+/* header css */
+ul{
+  list-style-type: none;
+
+}
+a{
+  text-decoration: none;
+}
+
+
+
+.header{
+    width: 100%;
+    height: 877px;
+    background-image: linear-gradient(155deg, #383638 2.06%, #0B0B0B 33.08%);
+}
+.navbar{
+  background:#0000002e;
+  backdrop-filter: blur(40px);
+  /* padding: 25px 0px; */
+  height: 70px;
+  padding: 18px 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 0 10px 5px blue;
+}
+
+
+
+.navigation, .nav-list{  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item:not(:last-child){
+  padding-right: 27px;
+}
+.nav-link{
+  text-transform: capitalize;
+}
+
+.nav_header_icons{
+    display: flex;
+    gap: 15px;
+}
+
+.nav-toogle{
+  display: none;
+}
+/* header css */
+
+/* site header style start*/
+.nav-link{
+  color: #8B8E99;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+}
+.menu{
+  background-color: #FFF;
+}
+
+
+/* site header style end*/
+
+/* header bottom css start */
+.site__hero{
+  padding: 172px 0px;
+}
+.site-home{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site__home{  
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap: 124px;
+
+}
+
+.site__home  *{
+  color: white;
+}
+
+
+/* site heading start */
+
+.site__home-heading{
+  margin-bottom: 20px;
+  width: 457px;
+  color: #FFF;
+  font-family: "Poppins";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 125.5%; 
+}
+
+.site_hero_paragraph{ 
+  width: 456px;
+  color: #8B8E99;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 125.5%; 
+}
+
+.site__home-right img{
+  width: 100%;
+}
+
+.site__home-left{ 
+  padding-top: 90px;
+}
+
+/* site heading end */
+
+
+/* search brands */
+.search__brands{
+  margin-top: 47px;
+  max-width: 443px;
+  border-radius: 15px;
+  background: #FFF;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search__brands > img{
+  padding: 19px 16px 20px 24px;
+}
+.search__input{
+  width: 62%;
+  padding: 19px 0px;
+  border: none;
+  outline: none;
+  color: rgba(139, 142, 153, 0.70);
+  font-family: var(--fontsPoppins);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 125.5%; /* 20.08px */
+}
+.search__input:focus {
+  color:#3858D6;
+}
+.search__btn{
+  background-color: #3858D6;
+  color: #FFF;
+  padding: 10px 6px 14px;
+  text-align: center;
+  font-family: var(--fontsPoppins);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 125.5%; /* 22.59px */
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  width: 100px;
+transition: all .9s;
+}
+.search__btn:hover{
+  transform: scale(0.8);
+  background-color:black;
+  color: #3858D6;
+  box-shadow: 3px 3px 3px;
+}
+/* search brands */
+
+
+/* main section one css start */
+
+.site__main_section{
+  background: #FFF;
+}
+
+.types_of_watches_cards{
+  display: grid;
+  grid-row: 239px 239px 239x;
+  grid-template-columns: 354px 354px 354px;
+  
+}
+.types_of_watches_cards{  
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  border-radius: 22px;
+      
+  
+}
+.image_watches_card{
+  width: 354px;
+  height: 239px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  background: #F6F6F6;
+}
+.types_of_watches_cards{
+  padding-top: 73px;
+}
+
+.image_watches_card img, h2, p{
+  width: 100%;
+}
+
+
+.image_watches_card{  
+  display: flex;
+  gap: 26px;
+}
+
+.image_watches_card:hover{
+  transition: 1s;
+  transform: scale(1.1);
+  box-shadow: 3px 3px 10px 3px #e3e4e9;
+  cursor: pointer;
+}
+
+.image_watches_card{
+  max-width: 100%;
+}
+
+.information_of_watch{
+  padding: 57px 0px;
+
+}
+.iamge_watch{
+  padding: 45px 0px 45px 40px;
+}
+
+
+.image_positon{
+  width: 100%;
+}
+
+
+.name_watch{  
+  width: 173px;
+  height: 40px;
+  color: #1E1D1D;
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.card_paragraph{
+  width: 173px;
+  height: 76px;
+  color: #8B8E99;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  
+}
+/* main section one css end */
+
+
+/* section two css start */
+.head-section-two{
+  padding: 135px 0px 0px 0px;
+}
+
+.advice{
+  width: 1102px;
+  color: #3858D6;
+  font-family: "Inter";
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.products{
+  width: 1100px;
+  color: #1E1D1D;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.apple-smart-1{
+  width: 334px;
+  height: 337px;
+  
+  text-align: center;
+  margin-bottom: 100px;
+  background-color: #F6F6F6;;
+}
+
+.image_positon{
+  padding: 28px 42px;
+  max-width: 100%;
+}
+
+.row-area{
+  padding-top: 65px;
+}
+
+.row-top{
+  width: 1110px;
+  display: grid;
+  grid-template-columns: repeat(3, 334px);
+  gap: 30px  64px;
+}
+
+.smart-head{
+  width: 334px;
+  height: 30px;
+  color: #1E1D1D;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.starts{
+ 
+  display:inline-block;
+
+   padding: 8px 0px;
+}
+
+strong{
+  width: 172px;
+  height: 25px;
+  color: #000;
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120.5%;
+}
+
+del{
+width: 158px;
+height: 19px;
+color: #8B8E99;
+text-align: right;
+font-family: "Poppins";
+font-size: 20px;
+font-weight: 500;
+line-height: 120.5%; /* 24.1px */
+}
+
+
+.row-bottom{
+ padding-top: 100px;
+}
+
+/* section two css end */
+
+
+/* btn more css  */
+
+.btn-view-more{
+  margin-left: 457px;
+  width: 196px;
+  height: 46px;
+  margin-top: 69px;
+  margin-bottom: 145px;
+  background-color: #3858D6;
+  border-radius: 20px;
+}
+
+
+
+.btn-view-more:hover{
+  transition: 0.5s;
+  transform: scale(1.1);
+  cursor: pointer;
+  color: rgb(80, 80, 237);
+  background-color: black;
+  box-shadow: 3px 3px 3px rgb(95, 90, 90);
+}
+
+
+.btn-link{
+  display: flex;
+  padding: 10px 6px;
+  width: 184px;
+  height: 27px;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center; 
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+
+/* btn more css  */
+
+
+
+
+/* section three start */
+
+.advice2{
+  width: 1102px;
+  padding-top: 145px;
+  height: 20px;
+  flex-shrink: 0;
+  color: #3858D6;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.products1{
+width: 1100px;
+height: 43px;
+flex-shrink: 0;
+color: #1E1D1D;
+text-align: center;
+font-family: "Inter";
+font-size: 36px;
+margin-top: 5px;
+margin-bottom: 55px;
+font-weight: 700;
+
+}
+
+
+
+
+.something{
+  display: flex;
+  justify-content: space-between;
+  width: 524px;
+  height: 239px;
+
+  flex-shrink: 0;  
+  border-radius: 22px;
+  background: #F6F6F6;
+}
+
+.image-man img{
+  padding: 30px 0px 30px 33px;
+}
+
+
+.cantacts{
+  display: flex;
+  gap: 57px;
+}
+
+.name{
+  width: 261px;
+  color: #1E1D1D;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 700;
+
+}
+
+.about2{ 
+ 
+  color: #8B8E99;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+}
+.about1{
+  width: 255.972px;
+  height: 61px;
+  color: #8B8E99;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.advice2{
+  margin-left: 399px;
+}
+
+
+.about-hamza{
+  padding-top: 58px;
+  margin-left: 28px;
+  margin-right:29px;
+}
+
+
+.products{
+  margin-bottom: 65px;
+}
+
+/* section three send */
+
+
+
+/* section four satrt */
+
+
+.box-area{
+  width: 1100px;
+  height: 377px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  background: #F6F6F6;
+  margin-top: 135px;
+  margin-bottom: 91px;
+}
+
+
+.btns{
+  width: 100%;
+}
+
+.btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 43px 0px 135px 0px;
+}
+
+
+.deffenrece{
+  display: flex;
+  gap: 194px;
+  padding-top: 33px;
+  
+}
+
+
+.texts{
+  padding: 107px 0px 0px 97px;
+}
+
+.sub{
+  width: 547px;
+  height: 40px;
+  color: #1E1D1D;
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: 700;
+}
+.daily{
+  width: 537px;
+  height: 29px;
+  flex-shrink: 0;
+  color: #8B8E99;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  
+}
+
+
+/* section four end */
+
+
+/* footer css start */
+
+footer{
+  background: #0B0B0B;
+  display: flex;
+  width: 100%;
+  height: 65px;
+  padding: 23px 0px 22px 0px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.mohid{
+  color: #FFF;
+font-family: "Poppins";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 125.5%; /* 20.08px */
+}
+/* footer css end */
+
+
+
+
+
+
+
+
+
+
+
+

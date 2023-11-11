@@ -1,0 +1,53 @@
+    @media(max-width: 1160px){
+    .site__home-left{
+        grid-template-columns:1fr;
+    
+    }
+        
+
+    @media(max-width: 700px){
+        .nav-list{
+            display: none;
+        }
+        .nav-toogle{
+            display: inline-block;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            
+        }
+        .nav-toogle img{
+            height: 40px;
+            color: white;
+        }
+    }
+}
+    @media(max-width:480px){
+    .site__home-left h1{
+        font-size: 48px;
+        width: 357px;
+    }
+}
+
+
+@media(max-width:1100px){
+    .types_of_watches_cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:760px){
+    .types_of_watches_cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+}
+
+
+
+@media(max-width:1200px){
+    .grid-template-columns: repeat(1, 334px);
+}
+    
